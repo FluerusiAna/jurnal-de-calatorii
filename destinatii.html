@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinații - Jurnal de Călătorii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Jurnal Călătorii</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+        <li class="nav-item"><a class="nav-link active" href="destinatii.html">Destinații</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Conținut principal -->
+<div class="container mt-5 pt-5">
+  <h2 class="mb-4">Destinațiile mele preferate</h2>
+
+  <!-- Căutare -->
+  <input type="text" id="searchInput" class="form-control mb-3" placeholder="Caută o destinație..." onkeyup="cautaDestinatie()">
+
+  <!-- Tabel -->
+  <table class="table table-bordered table-striped" id="destinatiiTable">
+    <thead class="table-dark">
+      <tr>
+        <th>Locație</th>
+        <th>Țara</th>
+        <th>Ce mi-a plăcut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Paris</td>
+        <td>Franța</td>
+        <td>Turnul Eiffel, vibe romantic, mâncare</td>
+      </tr>
+      <tr>
+        <td>Brașov</td>
+        <td>România</td>
+        <td>Atmosfera medievală, munții, cetatea</td>
+      </tr>
+      <tr>
+        <td>Barcelona</td>
+        <td>Spania</td>
+        <td>Plajele, Gaudi, arhitectura colorată</td>
+      </tr>
+      <tr>
+        <td>Istanbul</td>
+        <td>Turcia</td>
+        <td>Bazarele, mâncarea, atmosfera orientală</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Video YouTube -->
+ <div class="mt-5 mb-5">
+  <h4>Video despre Paris</h4>
+  <div class="ratio ratio-16x9">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/uK_ghSTfn6U?si=AGQJ2eufWa8ccfiX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<!-- Scripturi -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
